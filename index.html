@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="calc_container">
+        <input type="text" id="input" placeholder="input" disabled/><br>
+        <input type="text" id="result" placeholder="result"/><br>
+
+        <div class="number_keys">
+            <button type="button" onclick="add_number('1')">1</button>
+            <button type="button" onclick="add_number('2')">2</button>
+            <button type="button" onclick="add_number('3')">3</button><br>
+            <button type="button" onclick="add_number('4')">4</button>
+            <button type="button" onclick="add_number('5')">5</button>
+            <button type="button" onclick="add_number('6')">6</button><br>
+            <button type="button" onclick="add_number('7')">7</button>
+            <button type="button" onclick="add_number('8')">8</button>
+            <button type="button" onclick="add_number('9')">9</button><br>
+            <button type="button" onclick="add_number('0')">0</button>
+        </div>
+        <button type="button" id="add" onclick="add_operator('+');">+</button>
+        <button type="button" id="add" onclick="add_operator('-');">-</button>
+        <button type="button" id="add" onclick="add_operator('*');">*</button>
+        <button type="button" id="add" onclick="add_operator('/');">/</button>
+        <button type="button" id="add" onclick="reset_calculator();">C</button>
+        <button type="button" id="calculate" onclick="process_equation()">=</button>
+    </div>
+
+
+
+</body>
+</html>
